@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('auth.login');
 });
 Route::get('login',[CustomAuthController::class,'login']);
 Route::post('login-user',[CustomAuthController::class,'loginUser'])->name('login-user');
